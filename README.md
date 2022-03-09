@@ -11,3 +11,6 @@ in the MATLAB command window
 worldManipulator.mlx provide interactive parameter manipulation and synthesis. Type
 worldManipulator
 in the MATLAB command window
+
+### note
+fixed bug
