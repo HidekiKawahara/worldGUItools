@@ -23,7 +23,10 @@ worldManipulator
 in the MATLAB command window
 
 
-https://github.com/HidekiKawahara/worldGUItools/assets/6383109/f66166b0-174f-45ad-9bbe-87ef529d3054
+
+https://github.com/HidekiKawahara/worldGUItools/assets/6383109/a8985652-3225-4cd8-8260-602fea100331
+
+
 
 ### Preparation for morphing and interactive check
 wordTV2WmorphingEngineRev.mlx provides interactive preparation for extended morphing and check. Type
