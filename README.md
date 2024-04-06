@@ -1,4 +1,4 @@
-# WORLD GUI tools: Making speech signal processing accessible
+# WORLD GUI tools for explorational research and education of speech science
 GUI tools for WORLD vocoder
 
 ## MATLAB application
