@@ -1,4 +1,4 @@
-# WORLD GUI tools for explorational research and education of speech science
+# WORLD GUI tools for explorational research/education of speech science and technology
 GUI tools for WORLD vocoder
 
 ## MATLAB application
