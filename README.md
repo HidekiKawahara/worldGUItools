@@ -15,7 +15,7 @@ Kawahara, H., & Morise, M. (2024). Interactive tools for making temporally varia
 
 ### World GUI tools on YouTube channel
 
-[Link to YouTube channel on World GUI tools playlist](https://doi.org/10.1250/ast.e23.52](https://www.youtube.com/playlist?list=PLqr7NXdG4BylcF9QIqkT7zGgEUh_vdhq_)
+[Link to YouTube channel on World GUI tools playlist](https://www.youtube.com/playlist?list=PLqr7NXdG4BylcF9QIqkT7zGgEUh_vdhq_)
 
 ## MATLAB application
 ### Analysis ans basic synthesis
