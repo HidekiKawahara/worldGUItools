@@ -1,6 +1,18 @@
 # WORLD GUI tools for explorational research/education of speech science and technology
 GUI tools for WORLD vocoder
 
+## References
+
+### GUI tools: worldHandler, and worldManipulator
+
+Kawahara, H., & Morise, M. (2024). Interactive tools for making vocoder-based signal processing accessible: Flexible manipulation of speech attributes for explorational research and education. Acoustical Science and Technology, 45(1), 48-51.
+[DOI: 10.1250/ast.e23.52](https://doi.org/10.1250/ast.e23.52)
+
+### GUI tools: morphingAligner, morphingSoundGenerator, threeItemMorpherGeneralUI, and morphContinuumGen
+
+Kawahara, H., & Morise, M. (2024). Interactive tools for making temporally variable, multiple-attributes, and multiple-instances morphing accessible: Flexible manipulation of divergent speech instances for explorational research and education. arXiv preprint arXiv:2404.13418.
+[Link to arXiV]([ https://doi.org/10.1250/ast.e23.52](https://arxiv.org/abs/2404.13418)) (Accepted for Acoustical Science and Technology)
+
 ## MATLAB application
 ### Analysis ans basic synthesis
 worldHandler.mlx provide interactive control of basic copy-synth workflow. Type
