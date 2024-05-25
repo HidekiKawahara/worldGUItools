@@ -13,6 +13,10 @@ Kawahara, H., & Morise, M. (2024). Interactive tools for making vocoder-based si
 Kawahara, H., & Morise, M. (2024). Interactive tools for making temporally variable, multiple-attributes, and multiple-instances morphing accessible: Flexible manipulation of divergent speech instances for explorational research and education. arXiv preprint arXiv:2404.13418.
 [Link to arXiV]([ https://doi.org/10.1250/ast.e23.52](https://arxiv.org/abs/2404.13418)) (Accepted for Acoustical Science and Technology)
 
+### World GUI tools on YouTube channel
+
+[Link to YouTube channel on World GUI tools playlist]([https://doi.org/10.1250/ast.e23.52](https://www.youtube.com/playlist?list=PLqr7NXdG4BylcF9QIqkT7zGgEUh_vdhq_))
+
 ## MATLAB application
 ### Analysis ans basic synthesis
 worldHandler.mlx provide interactive control of basic copy-synth workflow. Type
