@@ -1,0 +1,3 @@
+SettingFilePath /Users/kawahara/m-file/miraikanf/samples/morphedSound
+Position 184   277  1360   700
+Extension off

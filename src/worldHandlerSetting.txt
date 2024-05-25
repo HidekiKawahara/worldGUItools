@@ -1,0 +1,2 @@
+f0_floor 40
+f0_ceil 800
