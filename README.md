@@ -67,5 +67,7 @@ https://github.com/HidekiKawahara/worldGUItools/assets/6383109/808a5cda-8913-466
 
 [morphingSoundGenerator longer version with Japanese caption](https://youtu.be/5hHatrPrjuY)
 ### note
+Added missing function, "generalizedTCmorphing"
+
 Tentatively updated using 25/May/2024 version. We will review and update code and usability by the end of May 2024.
 
