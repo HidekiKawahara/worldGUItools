@@ -1,5 +1,6 @@
 # WORLD GUI tools for explorational research/education of speech science and technology
-GUI tools for WORLD vocoder
+GUI tools for WORLD vocoder. This tool uses MATLAB version of WORLD. You can get it from below.
+[Ling to WORLD matlab version dwonload page]([https://doi.org/10.1250/ast.e23.52](http://www.isc.meiji.ac.jp/~mmorise/world/english/index.html))
 
 ## References
 
