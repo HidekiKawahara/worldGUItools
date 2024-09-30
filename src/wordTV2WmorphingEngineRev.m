@@ -132,6 +132,8 @@ for ii = 1:nAnch+1
     else
         endP = idxOnMorph(ii+1);
     end
+    safeguard = cumsum(ones(length(fxMorphMapRefIntrp(:, 1)),1)*0.0001);
+    % This is a quick and dirty fix. Practicall, OK. 
     for jj = strtP:endP
         fractionV = (tFrameMorph(jj) - tFrameMorph(strtP)) ...
             /(tFrameMorph(endP)-tFrameMorph(strtP));
@@ -141,14 +143,23 @@ for ii = 1:nAnch+1
             + fractionV * fxMorphMapTgt(:,ii+1);
         fxMorphMapMixIntrp(:, jj) = (1-mStr.fx) * fxMorphMapRefIntrp(:, jj) ...
             + mStr.fx * fxMorphMapTgtIntrp(:, jj);
-        spectrogramRefOnTFMrh(:, jj) = interp1(fxMorphMapRefIntrp(:, jj), spectrogramRefOnMrh(:, jj), fxRef, "linear","extrap");
-        spectrogramTgtOnTFMrh(:, jj) = interp1(fxMorphMapTgtIntrp(:, jj), spectrogramTgtOnMrh(:, jj), fxRef, "linear","extrap");
+        %safeguard = ones(length(fxMorphMapRefIntrp(:, jj)),1);
+        try 
+        spectrogramRefOnTFMrh(:, jj) = interp1(fxMorphMapRefIntrp(:, jj)+safeguard, ...
+            spectrogramRefOnMrh(:, jj), fxRef, "linear","extrap");
+        spectrogramTgtOnTFMrh(:, jj) = interp1(fxMorphMapTgtIntrp(:, jj)+safeguard, ...
+            spectrogramTgtOnMrh(:, jj), fxRef, "linear","extrap");
         spectrogramMixOnTFMrh(:, jj) = (1-mStr.sl) * spectrogramRefOnTFMrh(:, jj) ...
             + mStr.sl * spectrogramTgtOnTFMrh(:, jj);
-        aperiodicityRefOnTFMrh(:, jj) = interp1(fxMorphMapRefIntrp(:, jj), aperiodicityRefOnMrh(:, jj), fxRef, "linear","extrap");
-        aperiodicityTgtOnTFMrh(:, jj) = interp1(fxMorphMapTgtIntrp(:, jj), aperiodicityTgtOnMrh(:, jj), fxRef, "linear","extrap");
+        aperiodicityRefOnTFMrh(:, jj) = interp1(fxMorphMapRefIntrp(:, jj)+safeguard, ...
+            aperiodicityRefOnMrh(:, jj), fxRef, "linear","extrap");
+        aperiodicityTgtOnTFMrh(:, jj) = interp1(fxMorphMapTgtIntrp(:, jj)++safeguard, ...
+            aperiodicityTgtOnMrh(:, jj), fxRef, "linear","extrap");
         aperiodicityMixOnTFMrh(:, jj) = (1-mStr.ap) * aperiodicityRefOnTFMrh(:, jj) ...
             + mStr.ap * aperiodicityTgtOnTFMrh(:, jj);
+        catch
+            %keyboard;
+        end
     end
 end
 %%
